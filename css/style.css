@@ -1,0 +1,44 @@
+/* Styling for mrtijn website */
+body, html {
+  height: 100%;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+}
+
+.card-container {
+  display: flex;
+  height: 100%;
+  width: 50%;
+  margin: auto;
+}
+
+.card {
+  flex: auto;
+  align-self: center;
+  margin: 0;
+}
+
+.card * {
+  vertical-align: middle;
+}
+
+.contact-bit:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #546E7A !important;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.1s !important;
+}
+
+a:hover {
+  border-color: #607D8B !important;
+  color: #607D8B !important;
+}
+
+@media screen and (max-width: 660px) {
+  .card-container {
+    width: 90% !important;
+  }
+}
